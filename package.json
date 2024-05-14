@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.4",
+    "socket.io": "^4.7.5",
+    "yup": "^1.4.0"
+  },
+  "name": "socket.io-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
