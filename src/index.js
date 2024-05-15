@@ -21,10 +21,9 @@ app.use(cors({
 
 io.on("connection", (socket) => {   
         // socket.send("Message from User");
-        socket.on('sendMessage', ({ receiverId }) => {
-          console.log("Message Send By user");
-          
-          io.emit('newMessage', receiverId);
+        socket.on('sendMessage', ({ receiverId, senderId }) => {
+          console.log({receiverId, senderId});
+          io.emit('newMessage', {receiverId,  senderId});
         });
       
     socket.on("disconnect", () => {
